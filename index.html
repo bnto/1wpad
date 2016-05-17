@@ -1,0 +1,38 @@
+---
+layout: default
+active: days
+title: 1 webpage a day
+---	
+
+<h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+
+<section>
+<!-- welcome message ❤︎ -->
+<p class="dropcap">hi!</p>
+<p>This is my adventure into web develop&shy;ment.
+	Each day I will build a new webpage and blog about it.
+	It can be anything, experimen&shy;tal or useful, but most importantly fun for me to build.
+	Enjoy!</p><p>With &hearts;, Christophe.</p>
+
+<!-- webpage list -->
+<ol reversed>
+	<!-- <li><a href="#"></a></li> -->
+	<li><a href="/2016/05/16/day-1-the-homebase.html">The homebase</a></li>
+</ol>
+</section>
+
+<section>
+	{% for post in site.posts %}
+	<article>
+	  <header>
+	      {% capture day %}{{ post.date | date: '%m%d%Y' }}{% endcapture %}
+	      {% capture nday %}{{ post.next.date | date: '%m%d%Y' }}{% endcapture %}
+	      {% if day != nday %}
+	      <time>{{ post.date | date: "%b %-d, %Y" }}</time><br/>
+	      {% endif %}
+	      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	  </header>
+		{{ post.content }}
+	</article>
+	{% endfor %}
+</section>

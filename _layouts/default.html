@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include sidebar.html %}
+	<!--  main content -->
+	<div class="content">
+		{{ content }}
+	</div>
+
+    {% include footer.html %}
+	<script src="http://instantclick.io/v3.1.0/instantclick.min.js" data-no-instant></script>
+	<script data-no-instant>InstantClick.init();</script>
+  </body>
+
+</html>
