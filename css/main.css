@@ -10,7 +10,7 @@ html {
 body {
 	/* set default font */
 	font-size: 2.1em;	/* 2.1em is default */
-	font-family: "Helvetica Neue" "Open Sans", -apple-system, "Segoe UI", Roboto, Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: "Helvetica Neue", "Open Sans", -apple-system, "Segoe UI", Roboto, Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
 	
 	font-weight: 300;
 	color: rgba(0,0,0,.8);
@@ -124,22 +124,19 @@ ol {
 ol a {
 	background: tomato;
 	color: white;
+	border: 0.2rem solid tomato;
 }
 ol a:hover {
 	background: white;
 	color: tomato;
 }
-ol a {
-	.background: inherit;
-	.color: inherit;
-}
-ol a:hover {
-	.color: white;
-	.background: tomato;
-}
 ol li {
 	display: inline-block;
 	margin: 1.5rem 0;
+}
+ol {
+	border-left: 0.4em solid tomato;
+	padding-left: 1em;
 }
 
 /**************/
