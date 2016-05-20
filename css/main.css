@@ -154,7 +154,7 @@ ol {
 /* TEMPORARY FIX */
 
 @media screen and (max-width: 770px) {
-	/* switches to *** MOBILE VIEW *** if screen size < 768px
+	/* switches to *** MOBILE VIEW *** if screen size < 768px */
 	body {
 		/* margin: 0 auto; /* */
 		max-width: 35em; /* */
@@ -171,11 +171,7 @@ ol {
 /* messy... */
 
 /* article paragraph links */ 
-article p a,
-article p a:visited {
-	.color: tomato;
-	.text-decoration: none;
-}
+
 article p a,
 article p a:visited {
 	color: tomato;
