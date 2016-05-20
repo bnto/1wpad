@@ -104,7 +104,7 @@ ol a {
 /* reversed ordered list */
 ol {
 	counter-reset: days 6;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	padding-left: 0;
 }
 	ol li {
@@ -154,8 +154,7 @@ ol {
 /* TEMPORARY FIX */
 
 @media screen and (max-width: 770px) {
-	/* switches to *** MOBILE VIEW *** if screen size < 700px
-		=> vertical sidebar to horizontal sidebar */
+	/* switches to *** MOBILE VIEW *** if screen size < 768px
 	body {
 		/* margin: 0 auto; /* */
 		max-width: 35em; /* */
@@ -171,29 +170,35 @@ ol {
 /* visual candy */
 /* messy... */
 
-article p a, article p a:visited,
-.post-content a, .home a, post-content a:visited, .home a:visited {
+/* article paragraph links */ 
+article p a,
+article p a:visited {
+	.color: tomato;
+	.text-decoration: none;
+}
+article p a,
+article p a:visited {
 	color: tomato;
 	text-decoration: none;
 }
-article p a:hover, article p a:focus,
-.post-content a:hover, .home a:hover, post-content a:focus, .home a:focus {
+article p a:hover, article p a:focus {
 	text-decoration: underline;
 }
-article header a, article header a:visited {
+
+/* article header links */
+article header a,
+article header a:visited {
 	color: inherit;
 	border-left: 8px solid tomato;
 	padding-left: 7px;
 	text-decoration: none;
 	font-weight: normal;
 }
-article header a:hover,
-a:hover.post-link {
+article header a:hover {
 	border-left: 17px solid tomato;
 	text-decoration: none;
 }
-article header a:hover,
-a.post-link, a:hover {
+article header a, article header a:hover {
 	transition: all .4s;
 }
 
