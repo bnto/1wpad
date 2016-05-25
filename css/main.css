@@ -195,7 +195,7 @@ article header a:hover {
 	text-decoration: none;
 }
 article header a, article header a:hover {
-	transition: all .4s;
+	transition: border .4s;
 }
 
 article time {
@@ -207,7 +207,16 @@ article time {
 article {
 	margin-bottom: 35px;
 }
-
+#footer {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	display: none;
+}
+#footer p {
+	font-size: 1.5rem;
+	color: rgba(0,0,0,0.4);
+}
 .sidebar {
 	display: none !important;
 }
