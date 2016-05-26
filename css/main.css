@@ -203,6 +203,7 @@ article time {
 	text-transform: uppercase;
 	.color: #8b8888;
 	.font-weight: normal;
+	display: none;
 }
 article {
 	margin-bottom: 35px;
