@@ -1,0 +1,56 @@
+---
+layout: days
+title: Color Clock
+---
+
+<style type="text/css" media="screen">
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		*border: 1px solid black;
+	}
+	.container {
+		.width: 100vw;
+		.height: 100vh;
+		margin: 75px auto;
+		text-align: center;
+	}
+	#js-colorhexa h2 {
+		font-family: sans-serif;
+		*letter-spacing: .2em;
+		font-size: 1.5em;
+	}
+
+
+	
+</style>	
+
+<div class="container">
+	<h2 id="js-colorhexa"></h2>
+</div>
+
+
+<script>
+	//document.body.addEventListener('click', changeColor('colorhexa', 'h2'));
+	clearInterval(bgchange);
+	
+	function randomColor(){
+		return '#' + Math.random().toString(16).slice(2, 8).toUpperCase();
+	}
+	function changeColor(id, tag){
+		var color = randomColor();
+		document.body.style.backgroundColor = color;
+		document.getElementById(id).innerHTML = "<" + tag + ">" + color + "</" + tag + ">";
+	}
+	
+	//setInterval(function(){
+	//	changeColor('js-colorhexa', 'h2');
+	//}, 1000);
+	
+	var bgchange = setInterval(changeColor.bind(null, 'js-colorhexa', 'h2'), 1000);
+	
+	
+	
+	
+</script>
