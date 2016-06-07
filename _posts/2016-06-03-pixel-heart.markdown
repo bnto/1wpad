@@ -9,7 +9,7 @@ day: '03'
 ---
 {% include days/003-pixel-heart.html %}
 
-A [heart made of pixel][todays-page] – very big pixels — is today's page.
+A heart made of pixel – very big pixels — is today's page.
 I wanted to recreate the same pixelated heart I found in [this dribbble shot][ext-link].
 The border shadow might be a bit off and it lacks the animation, 
 but all in all it look pretty similar! Maybe I'll try to do the animations

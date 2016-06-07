@@ -11,7 +11,7 @@
 		-webkit-filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.8)) drop-shadow(0 0 50px rgba(0,0,0,0.5));
 		filter: drop-shadow(3px 3px 10px rgba(0,0,0,0.8)) drop-shadow(0 0 50px rgba(0,0,0,0.5));
 		transform-origin: right;
-		transform: translateX(-50px) translateY(-240px) rotate(45deg);
+		transform: translateX(15%) translateY(-240px) rotate(45deg);
 	}
 	.space {
 		margin-bottom: 400px;
@@ -22,9 +22,12 @@
 		height: 100px;
 		background: white;
 	}
-	@media screen and (max-width: 320px) {
+	@media screen and (max-width: 620px) {
 		.container {
-			transform: translateX(50%) translateY(-50px) rotate(45deg) scale(0.5);
+			transform: translateX(-50px) translateY(-240px) rotate(45deg) scale(0.6);
+		}
+		.space {
+			margin-bottom: 400px;
 		}
 	}
 	.square:nth-of-type(1) {

@@ -4,7 +4,7 @@ title:  "CSS is awesome"
 date:   2016-06-05 20:00:00 +0200
 categories: 
 active: blog
-sub: '& and awesomer in 3d'
+sub: '& awesomer in 3d'
 day: '05'
 ---
 {% include days/005-css-is-awesome.html %}
