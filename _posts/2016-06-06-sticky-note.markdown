@@ -1,10 +1,14 @@
 ---
 layout: post
-title:  "DAY 6 - Sticky note"
-date:   2016-05-23 20:00:00 +0200
+title:  "Sticky note"
+date:   2016-06-06 20:00:00 +0200
 categories: 
 active: blog
+sub: Never forget
+day: '06'
 ---
+{% include days/006-sticky-note.html %}
+
 Today is something that will help you remember that important
 task you've got to do later. I'm talking about [sticky notes][todays-page]! 
 

@@ -5,6 +5,7 @@ title: 1 webpage a day
 
 <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
 
+{% comment %}
 <section>
 <!-- welcome message ❤︎ -->
 <p class="dropcap">hi!</p>
@@ -12,10 +13,11 @@ title: 1 webpage a day
 	Each day I will build a new webpage and blog about it.
 	It can be anything, experimen&shy;tal or useful, but most importantly fun for me to build.
 	Enjoy!</p><!-- <p>With &hearts;, Christophe.</p>-->
-
 <!-- webpage list -->
 <ol reversed>
 	<!-- <li><a href="#"></a></li> -->
+	<li><a href="/days/008-crystal-globe.html">Crystal Globe</a></li>
+	<li><a href="/days/007-color-clock.html">Color Clock</a></li>
 	<li><a href="/days/006-sticky-note.html">Sticky Note</a></li>
 	<li><a href="/days/005-css-is-awesome.html">Awesome CSS</a></li>
 	<li><a href="/days/004-animated-color-palette.html">Animated Palette</a></li>
@@ -24,7 +26,20 @@ title: 1 webpage a day
 	<li><a href="/2016/05/16/day-1-the-homebase.html">The homebase</a></li>
 </ol>
 </section>
+{% endcomment %}
 
+<section>
+  <ol reversed>
+    {% for post in site.posts %}
+      <li>
+          <a href="{{ post.url | prepend: site.baseurl }}">{% if post.shorttitle %}{{ post.shorttitle}} {% else %} {{ post.title }}{% endif %}</a>
+      </li>
+    {% endfor %}
+  </ol>
+
+</section>
+
+{% comment %}
 <section>
 	{% for post in site.posts %}
 	<article>
@@ -40,3 +55,5 @@ title: 1 webpage a day
 	</article>
 	{% endfor %}
 </section>
+{% endcomment %}
+

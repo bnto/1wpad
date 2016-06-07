@@ -1,10 +1,14 @@
 ---
 layout: post
-title:  "DAY 5 - CSS is awesome"
-date:   2016-05-20 20:00:00 +0200
+title:  "CSS is awesome"
+date:   2016-06-05 20:00:00 +0200
 categories: 
 active: blog
+sub: '& and awesomer in 3d'
+day: '05'
 ---
+{% include days/005-css-is-awesome.html %}
+
 "CSS is awesome" is a joke among web designers where the text "CSS is awesome" overflows
 a specified area. Because sometimes CSS does what you don't expect. For giggles I
 decided that today's webpage would be exactly that.

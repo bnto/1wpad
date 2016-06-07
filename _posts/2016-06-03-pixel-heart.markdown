@@ -1,10 +1,14 @@
 ---
 layout: post
-title:  "DAY 3 - Pixel Heart"
-date:   2016-05-18 20:00:00 +0200
+title:  "Pixel Heart"
+date:   2016-06-03 20:00:00 +0200
 categories: 
 active: blog
+sub: a heart made of pixels
+day: '03'
 ---
+{% include days/003-pixel-heart.html %}
+
 A [heart made of pixel][todays-page] – very big pixels — is today's page.
 I wanted to recreate the same pixelated heart I found in [this dribbble shot][ext-link].
 The border shadow might be a bit off and it lacks the animation, 

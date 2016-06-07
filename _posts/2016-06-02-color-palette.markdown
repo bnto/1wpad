@@ -1,10 +1,14 @@
 ---
 layout: post
-title:  "DAY 2 - Color Palette"
-date:   2016-05-17 20:00:00 +0200
+title:  "Color Palette"
+date:   2016-06-02 20:00:00 +0200
 categories: 
 active: blog
+sub: Choose your colors
+day: '02'
 ---
+{% include days/002-color-palette.html %}
+
 A few days ago I stumbled upon a tutorial to create a color palette in Sketch.
 For those who don't know, Sketch is a great app for designing websites.
 I really liked this particular color palette and decided to recreate the same in CSS.

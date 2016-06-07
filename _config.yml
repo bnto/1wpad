@@ -12,6 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   The adventure of one guy building 1 webpage a day.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://1wpad.nto.lu" # the base hostname & protocol for your site
+permalink: /days/:title/
 
 # Build settings
 markdown: kramdown

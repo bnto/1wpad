@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 	/* transition: all .4s; /* */
 }
 html {
@@ -29,7 +31,6 @@ body {
 		
 	}
 }
-
 /**********/
 /** copy **/
 /**********/
@@ -52,13 +53,13 @@ h1 a, h1 a:visited {
 	text-decoration: none;
 	color: inherit;
 }
-h2 {
+/* h2 {
 	font-family: sans-serif;
 	font-weight: 300;
 	font-size: 2em;
 	margin-bottom: 0;
 	padding-bottom: 0;
-}
+} */
 .dropcap {
 	font-family: Georgia, serif;
 	font-size: 4.8em;
@@ -115,9 +116,9 @@ ol {
 		counter-increment: days -1;
 		.content: ' ' counter(days);
 		.background-color: red;
-		.color: white;
+		color: white;
 		padding: 1rem;
-		.background: tomato;
+		background: tomato;
 		.padding-right: 0;
 		border-right: 2px solid white;
 	}
@@ -127,16 +128,18 @@ ol a {
 	border: 0.2rem solid tomato;
 }
 ol a:hover {
-	background: white;
+	background: transparent;
 	color: tomato;
 }
 ol li {
 	display: inline-block;
 	margin: 1.5rem 0;
+	.margin: 3rem 0;
 }
 ol {
-	border-left: 0.4em solid tomato;
-	padding-left: 1em;
+	.border-left: 0.4em solid tomato;
+	.padding-left: 1em;
+	margin-top: 50px;
 }
 
 /**************/
@@ -145,8 +148,9 @@ ol {
 
 /* TEMPORARY FIX */
 .content {
-	margin-left: 4em;
-	margin: 0 auto;
+	margin-left: 5vw;
+	margin-right: 7vw;
+	.margin: 0 auto;
 	max-width: 904px;
 	padding: 0 52px;
 }
@@ -221,3 +225,35 @@ article {
 .sidebar {
 	display: none !important;
 }
+
+
+/***NEW****/
+article header {
+	.margin: 75px 0;
+	padding: 1em 0 0 0;
+	margin-bottom: 50px;
+}
+header h2 {
+	font: 3em/1 Avenir, "Helvetica Neue", Lato;
+	font-weight: bold;
+	margin-bottom: 5px;
+
+}
+header span {
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgba(0,0,0,0.4);
+}
+article p {
+	margin-bottom: 20px;
+}
+article footer {
+	margin: 50px 0 50px 0;
+}
+article footer span {
+	font-family: Avenir, "Helvetica Neue", Lato, sans-serif;
+	font-weight: bold;
+}
+* {*border: 2px solid}
