@@ -16,7 +16,7 @@ decided that today's webpage would be exactly that.
 But — little did I know that there is
 an updated version of the joke with a 3D effect! So while the regular one was
 easy to recreate, the 3D one was way more tricky. I had to use all kinds of css transforms
-and clever hiding to get the same effet, but [here is my take on CSS is awesome][todays-page]!
+and clever hiding to get the same effet.
 
 
 [todays-page]: {{ site.baseurl }}/days/005-css-is-awesome.html
