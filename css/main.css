@@ -132,9 +132,9 @@ ol a:hover {
 	color: tomato;
 }
 ol li {
-	display: inline-block;
+	display: block;
 	margin: 1.5rem 0;
-	.margin: 3rem 0;
+	margin: 3rem 0;
 }
 ol {
 	.border-left: 0.4em solid tomato;
@@ -255,5 +255,11 @@ article footer {
 article footer span {
 	font-family: Avenir, "Helvetica Neue", Lato, sans-serif;
 	font-weight: bold;
+}
+article footer span {
+	background: black;
+	color: white;
+	padding: 6px 7px 5px 8px;
+	border-radius: 50%;
 }
 * {*border: 2px solid}
